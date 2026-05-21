@@ -67,9 +67,11 @@ window.onscroll = function () {
 
 //Seleccionar el/los elementos y asociarlos a un evento
 const btnContactar = document.querySelector(".boton-contactar");
-btnContactar.addEventListener("click", function (evento) {
-  console.log(evento);
-});
+if (btnContactar) {
+  btnContactar.addEventListener("click", function (evento) {
+    console.log(evento);
+  });
+}
 /*
 //Seleccionar el/los elementos y asociarlos a un evento
 const btnFormulario = document.querySelector(".boton-formulario");
@@ -103,6 +105,9 @@ email.addEventListener("input", leerTexto);
 mensaje.addEventListener("input", leerTexto);
 telefono.addEventListener("input", leerTexto);
 function leerTexto(e) {
+  if (e.target.id === "telefono") {
+    e.target.value = e.target.value.replace(/\D/g, "").slice(0, 10);
+  }
   datos[e.target.id] = e.target.value;
   console.log(datos);
 }
@@ -130,6 +135,11 @@ formulario.addEventListener("submit", function (evento) {
 });
 
 function mostrarError(mensaje) {
+  const errorExistente = formulario.querySelector(".error");
+  if (errorExistente) {
+    return;
+  }
+
   const error = document.createElement("P");
   error.textContent = mensaje;
   error.classList.add("error");
@@ -141,6 +151,11 @@ function mostrarError(mensaje) {
 }
 
 function mostrarOK(mensaje) {
+  const correctoExistente = formulario.querySelector(".correcto");
+  if (correctoExistente) {
+    return;
+  }
+
   const correcto = document.createElement("P");
   correcto.textContent = mensaje;
   correcto.classList.add("correcto");
