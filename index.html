@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <!-- el idioma -->
+  <head>
+    <meta charset="UTF-8" />
+    <!-- encoding, ñ, tildes-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Navegador-->
+    <title>Neverness to Everness (NTE)</title>
+    <!-- Titulo de la pagina-->
+    <link rel="preload" href="css/normalize.css" as="style" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="css/styles.css" as="style" />
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <h1 class="titulo" id="title">
+        Neverness to Everness <span> (NTE) </span>
+      </h1>
+      <!--Utilizar un h1 por documento html-->
+    </header>
+
+    <div class="nav-bg">
+      <nav class="navegacion-principal contenedor">
+        <a href="index.html">Inicio</a>
+        <a href="historia.html">Historia</a>
+        <a href="personajes.html">Personajes</a>
+        <a href="https://nte.perfectworld.com/es/" target="_blank" rel="noopener noreferrer">Página web oficial</a>
+      </nav>
+    </div>
+
+    <section class="hero">
+      <img src="imagenes/slide1.jpg" alt="Panorama de Hethereau 1" />
+      <img src="imagenes/slide2.jpg" alt="Panorama de Hethereau 2" />
+      <img src="imagenes/slide3.jpg" alt="Panorama de Hethereau 3" />
+      <img src="imagenes/slide4.jpg" alt="Panorama de Hethereau 4" />
+      <img src="imagenes/slide5.jpg" alt="Panorama de Hethereau 5" />
+      <div class="contenido-hero">
+        <p>"El nuevo GTA: Anime"</p>
+        <p>Hethereau — Ciudad</p>
+        <a class="boton boton-jugar-demo" href="#">Jugar</a>
+      </div>
+    </section>
+
+    <main class="sombra">
+      <h2>Características</h2>
+      <div class="caracteristicas">
+        <section class="lenguaje">
+          <h3>Resumen</h3>
+          <p>
+            Neverness to Everness (también conocida abreviadamente como NTE) es
+            un videojuego de rol de acción de mundo abierto urbano gratuito
+            desarrollado por Hotta Studio, una subsidiaria de Perfect World,
+            para Android, iOS, Microsoft Windows y PlayStation 5.
+          </p>
+          <p>
+            Fue lanzado oficialmente el 29 de abril de 2026, aunque seis días
+            antes, el 23 de abril, llegó primero a la República Popular China.
+          </p>
+        </section>
+        <section class="lenguaje">
+          <h3>Ambientación</h3>
+          <p>
+            Ambientado en la moderna y ficticia ciudad de Hethereau, el jugador
+            interpreta a un evaluador que explora el mundo y lucha contra
+            fuerzas hostiles a medida que avanza en la historia.
+          </p>
+        </section>
+        <section class="lenguaje">
+          <h3>Jugabilidad</h3>
+          <p>
+            Neverness to Everness es un juego de rol de acción en 3D con vista
+            en tercera persona. El jugador controla a diferentes personajes,
+            recolecta objetos y se desplaza por un mundo abierto urbano.
+          </p>
+          <p>
+            Puede correr, saltar, esprintar, trepar, nadar y conducir diversos
+            vehículos. Sus movimientos especiales, excepto esprintar, están
+            limitados por una barra de resistencia.
+          </p>
+        </section>
+        <section class="lenguaje">
+          <h3>Características</h3>
+          <p>
+            Cada personaje tiene habilidades especiales llamadas Habilidades
+            Esper. El juego también incluye personalización de vehículos,
+            mejora de negocios y una primera beta cerrada realizada el 28 de
+            noviembre de 2024.
+          </p>
+        </section>
+      </div>
+
+      <section>
+        <h2>Contacto</h2>
+
+        <form class="formulario">
+          <fieldset>
+            <legend>Contáctame</legend>
+
+            <div class="contenedor-campos">
+              <div class="campo">
+                <label>Nombre</label>
+                <input
+                  class="input-text nombre"
+                  id="nombre"
+                  type="text"
+                  placeholder="Nombre"
+                />
+              </div>
+              <div class="campo">
+                <label>Correo</label>
+                <input class="input-text email" id="email" type="email" placeholder="correo@ejemplo.com" />
+              </div>
+              <div class="campo">
+                <label>Teléfono</label>
+                <input class="input-text telefono" id="telefono" type="tel" placeholder="09XXXXXXXX" />
+              </div>
+              <div class="campo">
+                <label>Mensaje</label>
+                <textarea class="input-text mensaje" id="mensaje" placeholder="Escribe tu mensaje aquí..."></textarea>
+              </div>
+            </div>
+            <div class="enviar">
+              <input
+                class="boton boton-formulario"
+                type="submit"
+                value="Enviar"
+              />
+            </div>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>Todos los derechos reservados. Neverness to Everness</p>
+    </footer>
+    <script src="IntroduccionJS/js/scripts.js"></script>
+  </body>
+</html>
